@@ -1,0 +1,35 @@
+{
+  "name": "jest-tests",
+  "version": "0.0.1",
+  "description": "some examples how to test Dom Events and browser javascript with jest",
+  "main": "index.js",
+  "scripts": {
+    "dev-test": "jest --watch --coverage",
+    "test": "jest",
+    "lint": "eslint ./ --ext js"
+  },
+  "keywords": [
+    "jest",
+    "tests",
+    "dom"
+  ],
+  "author": "Rafael Malveis Ximenes <rmalveis@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "jest": "^19.0.2",
+    "pre-push": "^0.1.1"
+  },
+  "prePush": [
+    "test",
+    "lint"
+  ],
+  "jest": {
+    "verbose": true
+  }
+
+}
